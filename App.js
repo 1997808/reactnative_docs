@@ -1,11 +1,17 @@
 import React, { Component } from 'react'
 import { Text, View } from 'react-native'
-import HelloWorldApp from "./components/HelloWorldApp.js"
+import HelloWorldApp from "./src/components/HelloWorldApp.js"
+import Bananas from "./src/components/Bananas.js"
 
-export default class App extends Component {
+class App extends Component {
   render() {
     return (
-      <HelloWorldApp />
+      <React.Fragment>
+        <HelloWorldApp />
+        <Bananas />
+      </React.Fragment>
     )
   }
 }
+
+export default App
